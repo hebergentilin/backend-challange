@@ -49,17 +49,7 @@ public class SwaggerConfig {
                 .securitySchemes(auth)
                 .securityContexts(securityContexts)
                 .select()
-                    .paths(regex("(/v1/sellers.*|" +
-                            "/v1/orders.*|" +
-                            "/v1/transfers.*|" +
-                            "/v1/providers.*|" +
-                            "/v1/financial_transaction.*|" +
-                            "/v1/bank_account.*|" +
-                            "/v1/bank_account_intermediary.*|" +
-                            "/v1/moviments.*|" +
-                            "/v1/seller-transaction.*|" +
-                            "/v1/split.*){1}$|" +
-                            "/seller/billing/aggregate/.*"))
+                    .paths(regex("(/v1/providers.*|){1}$|"))
 
                 .build();
     }
