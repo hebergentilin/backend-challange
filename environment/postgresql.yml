@@ -1,0 +1,16 @@
+version: '3.1'
+
+services:
+
+  db:
+    image: postgres
+    restart: always
+    container_name: postgresql-backend-challenge
+    volumes:
+      - ./docker-entrypoint-initdb.d/:/docker-entrypoint-initdb.d/
+    environment:
+      POSTGRES_PASSWORD: s2it-challenge
+      POSTGRES_USER: admin-s2it
+      POSTGRES_DB: backend-challenge
+    ports:
+      - "5431:5432"

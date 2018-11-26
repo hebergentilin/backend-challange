@@ -1,0 +1,7 @@
+package com.invillia.acme.exceptions;
+
+public class EntityNotFound extends Exception {
+    public EntityNotFound(String message) {
+        super(message);
+    }
+}

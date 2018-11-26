@@ -46,3 +46,20 @@ scalability.
 * Security
 * Swagger - https://swagger.io/
 * Clean Code
+
+
+# Features Implemented
+
+Start the application executing the following command
+
+```./start.sh```
+
+Open the URL ```http://localhost:8081/swagger-ui.html``` to see the project documentation.
+
+To use the api, ```user``` and ```password``` are required at each request, as basic authorization.
+
+The postgresql database can be access, starting the docker-compose file with the following command
+
+```docker-compose -f postgresql.yml up```
+
+API collection, import ```backend-challange.postman_collection.json``` to postman.
